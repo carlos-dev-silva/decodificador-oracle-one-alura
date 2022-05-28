@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="BR-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="https://www.alura.com.br/" target="_blank"><img src="logoalura.png" class="logoalura"
+                alt="Logo da Alura"></a>
+    </header>
+
+    <main class="main">
+        <section class="texto">
+
+            <textarea id="input-texto" class="input-texto" cols="32" rows="16" style="padding: 10px 20px"
+                placeholder="Digite seu texto..."></textarea>
+
+            <div>
+                <h6 class="informacao"><img class="info" src="exclamacao.png" alt="alerta">&ensp;Apenas letras
+                    minúsculas, sem acentos e sem caracteres especiais.</h6>
+            </div>
+
+            <div class="botoes">
+                <button class="encriptar" onclick="btnEncriptar()">CRIPTOGRAFAR</button>
+                <button class="descriptar" onclick="btnDescriptar()">DESCRIPTOGRAFAR</button>
+            </div>
+        </section>
+
+        <section class="caixa">
+            <textarea id="idUnica" class="mensagem" cols="18" rows="8" style="padding: 10px 20px"></textarea>
+            <button id="idBotao" class="copiar" onclick="btnCopiar()">COPIAR</button>
+            <button class="limpar" onclick="btnLimpar()">LIMPAR</button>
+
+            <img id="menino" class="imagem" src="meninofigma.png" alt="Menino com uma lupa nas mãos" />
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+
+    <footer>
+        <p class="rodape">&#169; Coded by Carlos S. - <a href="https://github.com/carlos-dev-silva"
+                target="_blank">https://github.com/carlos-dev-silva</a> - (Challenge Oracle One Alura)</p>
+    </footer>
+</body>
+
+</html>
